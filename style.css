@@ -1,0 +1,19 @@
+
+.audio {
+    height: 80px;
+}
+#submit-btn {
+    color: #fff;
+    background: #409eff;
+    border-color: #409eff;
+}
+#submit-btn:hover{
+    background: #66b1ff;
+    border-color: #66b1ff;
+    color: #fff;
+}
+#clear-btn {
+    color: #fff;
+    background: #e6a23c;
+    border-color: #e6a23c;
+}
