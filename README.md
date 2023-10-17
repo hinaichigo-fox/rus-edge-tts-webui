@@ -14,7 +14,12 @@ style.css - размеры и цвета кнопок и окон.
 
 # Установка
 ```
-d: (если хотите устанавливать на диск d или любой другой смените букву d на нужную)
+Для ленивых на винде:
+git clone https://github.com/hinaichigo-fox/rus-edge-tts-webui.git
+Запускаете install.bat
+```
+```
+Для всех
 git clone https://github.com/hinaichigo-fox/rus-edge-tts-webui.git
 cd rus-edge-tts-webui
 pip install edge-tts
@@ -24,7 +29,11 @@ pip install asyncio
 
 # Запуск
 ```
-d: (если установлено не на диск c, если на диск с то пропускаем)
+Запускаете start.bat
+далее в консоли появится строчка Running on local URL:  http://0.0.0.0:7860 у вас будут другие цифры. Копируем адрес и вводим в браузер. 
+```
+```
+Если не запускали батники
 cd rus-edge-tts-webui
 python app.py
 далее в консоли появится строчка Running on local URL:  http://0.0.0.0:7860 у вас будут другие цифры. Копируем адрес и вводим в браузер. 
@@ -37,3 +46,5 @@ python app.py
 2.Добавить формат .wav на выход.
 3.Автоматическое открытие браузера.
 ```
+
+Спасибо https://github.com/NeuroSenko за помощь по батникам
