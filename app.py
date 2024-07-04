@@ -1,3 +1,4 @@
+import argparse
 import gradio as gr
 import edge_tts
 import asyncio
@@ -96,4 +97,7 @@ with gr.Blocks(css="style.css", title="Преобразование текста
                       outputs=[audio])
 
 if __name__ == "__main__":
-    demo.launch()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--server-name", default="127.0.0.1", help="Gradio server name")
+    args = parser.parse_args()
+    demo.launch(server_name=args.server_name)
