@@ -1,0 +1,8 @@
+services:
+  edge-tts-ui:
+    restart: unless-stopped
+    build: .
+    working_dir: /app
+    command: python app.py --server-name 0.0.0.0
+    ports:
+      - 7860:7860
